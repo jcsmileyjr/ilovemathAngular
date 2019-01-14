@@ -1,0 +1,73 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.appTitle {
+  //flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: navy;
+  color: white;
+}
+
+.appTitle > div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.appCenterTitle {
+  color: red;
+}
+
+.headerSection {
+  //flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+  background-color: navy;
+  color: white;
+}
+
+.equationSection {
+  //flex: 5;
+  font-size: 48px;
+  margin-top: 20px;
+}
+
+.equationMiddleLine {
+  display: flex;
+}
+
+.equationLine {
+  flex-basis: 50%;
+}
+
+.equationOperatorLine {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.equationUnderLine {
+  border: 1px solid  black;
+  width: 60%;
+  margin: auto;
+}
+
+.equationInputSection {
+  text-align: center;
+}
+
+.footerSection{
+  margin-top: auto;
+}
+
+.footer{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items: center;
+}
