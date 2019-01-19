@@ -1,7 +1,7 @@
 .main {
   display: flex;
   flex-direction: column;
-    height: 100vh;
+    height: 95vh;
 }
 .appTitle {
   //flex: 1;
@@ -11,6 +11,7 @@
   justify-content: center;
   background-color: navy;
   color: white;
+  font-size: 8vh;    
 }
 
 .appTitle > div {
@@ -31,11 +32,12 @@
   padding-top: 10px;
   background-color: navy;
   color: white;
+  font-size: 3vh
 }
 
 .equationSection {
   //flex: 5;
-  font-size: 48px;
+  font-size: 10vh;
   margin-top: 20px;
 }
 
@@ -71,4 +73,5 @@
   flex-direction:row;
   justify-content: space-around;
   align-items: center;
+  font-size: 2vh;
 }
