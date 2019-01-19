@@ -1,0 +1,10 @@
+.headerSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+  background-color: navy;
+  color: white;
+  font-size: 3vh
+}
