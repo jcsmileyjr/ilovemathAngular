@@ -11,7 +11,7 @@
   justify-content: center;
   background-color: navy;
   color: white;
-  font-size: 8vh;    
+  font-size: 7vh;    
 }
 
 .appTitle > div {
@@ -62,6 +62,16 @@
 
 .equationInputSection {
   text-align: center;
+}
+
+.equationInput {
+    border: 1px solid  black;
+    text-align: center;
+    font-size: 10vh;
+    margin-top: 3vh;
+    height:15vh;
+    width: 25vh;
+    
 }
 
 .footerSection{
