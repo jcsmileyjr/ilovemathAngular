@@ -1,0 +1,11 @@
+.footerSection{
+  margin-top: auto;
+}
+
+.footer{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2vh;
+}
