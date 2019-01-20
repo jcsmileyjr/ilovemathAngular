@@ -9,9 +9,9 @@
   </article>
   <article class="equationUnderLine"></article>
   <article class="equationInputSection">
-    <input class="equationInput" type="text">  
+    <input class="equationInput" type="text" [(ngModel)]="userAnswer">  
   </article>
   <article class="equationSubmitSection">
-    <button class="equationSubmitButton">Submit</button>
+    <button class="equationSubmitButton" (click)="onSubmitClick()">Submit</button>
   </article>
 </section>

@@ -5,8 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class CalculateService {
 
-  currentTopLine = 0;
-  current = 0;    
+  currentTopLine = 0; //initate equation top line variable
+  correctAnswer = 0;  //initate varible for correct answer to current equation  
   constructor() { }
     
   getTopLine(){
@@ -17,6 +17,25 @@ export class CalculateService {
       }
       return this.currentTopLine;
   }
+
+  checkUserAnswer(operator, userAnwer){
+      if(operator == "Addition"){
+          this.correctAnswer = this.currentTopLine + 1;
+          if(this.correctAnswer == userAnwer){
+              console.log("True");
+              return true;
+          }else{
+              console.log("False");
+              return false;
+          }
+      }else if(operator =="Subtraction"){
+        console.log("Subtraction in progress");
+      }else if(operator=="Multiplication"){
+        console.log("Multiplication in progress");  
+      }else {
+        console.log("Division in progress");  
+      } 
+  }//end of checkUserAnswer method
 
   
 }

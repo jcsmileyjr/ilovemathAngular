@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms';//NgModel lives here
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,6 +26,7 @@ import {CalculateService} from './calculate.service'
   ],
   imports: [
     BrowserModule,
+    FormsModule, //need to use ngModel
     AppRoutingModule
   ],
   providers: [CalculateService],
