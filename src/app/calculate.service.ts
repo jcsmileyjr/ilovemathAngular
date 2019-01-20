@@ -10,7 +10,7 @@ export class CalculateService {
   correctAnswer = 0;  //initate varible for correct answer to current equation  
   constructor() { }
     
-  getTopLine(){
+  getRandomTopLineNumber(){
       this.current = this.currentTopLine;
       this.currentTopLine = Math.floor(Math.random()*11);
       if(this.current == this.currentTopLine){

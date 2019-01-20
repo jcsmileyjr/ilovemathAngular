@@ -12,7 +12,9 @@ import { AdditionComponent } from './addition/addition.component';
 import { HomeComponent } from './home/home.component';
 
 
-import {CalculateService} from './calculate.service'
+import {CalculateService} from './calculate.service';
+
+import {ScoreService} from './score.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,7 @@ import {CalculateService} from './calculate.service'
     FormsModule, //need to use ngModel
     AppRoutingModule
   ],
-  providers: [CalculateService],
+  providers: [CalculateService, ScoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

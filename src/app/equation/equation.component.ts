@@ -14,16 +14,16 @@ export class EquationComponent implements OnInit {
 
   constructor(private calculate: CalculateService) {
 
-    this.topLine = calculate.getTopLine();//when the app starts a random number is generated and shown
+    this.topLine = calculate.getRandomTopLineNumber();//when the app starts a random number is generated and shown
   }
 
-  //method called by the equation componet's submit button. If the user type in a valid answer (not undefined) then it use the Calculate's service to check the user answer. 
+  //method called by the equation componet's submit button. If the user type in a valid answer (not undefined) then it use the Calculate's service to check the user answer and move to the next random number.
   //update the score, update the percentage completed, and move to the next random number.
   onSubmitClick(){
     if(typeof this.userAnswer !== "undefined"){
       console.log(this.userAnswer);
-      this.calculate.checkUserAnswer("Addition", this.userAnswer);
-      this.topLine = this.calculate.getTopLine();
+      this.calculate.checkUserAnswer("Addition", this.userAnswer);//Calculate and check the score
+      this.topLine = this.calculate.getRandomTopLineNumber(); //Get the next random number
         
     }else {
         console.log("THE USER IS CRAZY");
