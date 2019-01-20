@@ -5,11 +5,16 @@ import { Injectable } from '@angular/core';
 })
 export class CalculateService {
 
-  currentTopLine = 10;
-    
+  currentTopLine = 0;
+  current = 0;    
   constructor() { }
     
   getTopLine(){
+      this.current = this.currentTopLine;
+      this.currentTopLine = Math.floor(Math.random()*11);
+      if(this.current == this.currentTopLine){
+          this.currentTopLine = Math.floor(Math.random()*11);
+      }
       return this.currentTopLine;
   }
 
