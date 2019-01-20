@@ -22,7 +22,9 @@ export class EquationComponent implements OnInit {
   onSubmitClick(){
     if(typeof this.userAnswer !== "undefined"){
       console.log(this.userAnswer);
-      this.calculate.checkUserAnswer("Addition", this.userAnswer);        
+      this.calculate.checkUserAnswer("Addition", this.userAnswer);
+      this.topLine = this.calculate.getTopLine();
+        
     }else {
         console.log("THE USER IS CRAZY");
     }  

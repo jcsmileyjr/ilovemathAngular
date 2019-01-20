@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class CalculateService {
 
   currentTopLine = 0; //initate equation top line variable
+  current = 0; //initate temp variable used to check if the currentTopLine is the previous currentTopLine
   correctAnswer = 0;  //initate varible for correct answer to current equation  
   constructor() { }
     
