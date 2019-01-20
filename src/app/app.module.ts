@@ -10,6 +10,9 @@ import { FooterComponent } from './footer/footer.component';
 import { AdditionComponent } from './addition/addition.component';
 import { HomeComponent } from './home/home.component';
 
+
+import {CalculateService} from './calculate.service'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +27,7 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CalculateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
