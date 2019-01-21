@@ -24,7 +24,7 @@ export class EquationComponent implements OnInit {
     if(typeof this.userAnswer !== "undefined"){
       this.calculate.checkUserAnswer("Addition", this.userAnswer);//Calculate and check the score
       this.topLine = this.calculate.getRandomTopLineNumber(); //Get the next random number
-      this.score.updateCurrentCountQuestionsAnswered();
+      this.score.updateCurrentCountQuestionsAnswered();//Use to add 1 to the current number of questions answer that is displayed on the header component.
         
     }else {
         console.log("THE USER IS CRAZY");

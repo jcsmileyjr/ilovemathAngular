@@ -15,13 +15,12 @@ export class HeaderComponent implements OnInit {
     
   }
 
-  updateProgress(){[
-      this.questionsAnswered = this.score.getCurrentCountQuestionsAnswered();
-      
-  ]}
-
   ngOnInit() {
-      this.updateProgress();
+      
+      //This method async update the questionsAnswered variable with the Score servie questionsAnswer variable
+      this.score.questionsAnswer.subscribe((value) => {
+          this.questionsAnswered = value;
+      });
   }
 
 }
