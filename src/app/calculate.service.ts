@@ -19,14 +19,13 @@ export class CalculateService {
       return this.currentTopLine;
   }
 
+  //Used the type of operator to decide which equation to use
   checkUserAnswer(operator, userAnwer){
       if(operator == "Addition"){
           this.correctAnswer = this.currentTopLine + 1;
           if(this.correctAnswer == userAnwer){
-              console.log("True");
               return true;
           }else{
-              console.log("False");
               return false;
           }
       }else if(operator =="Subtraction"){
