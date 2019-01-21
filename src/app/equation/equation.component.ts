@@ -27,7 +27,7 @@ export class EquationComponent implements OnInit {
       this.topLine = this.calculate.getRandomTopLineNumber(); //Get the next random number
       this.score.updateCurrentCountQuestionsAnswered();//Use to add 1 to the current number of questions answer that is displayed in the header component.
       this.score.updateScore(this.checkAnswerResults);//Use a True or False boolean to update the score
-      
+      this.userAnswer = "";    //clear the input form after the answer has been submitted.
     }else {
         console.log("THE USER IS CRAZY");
     }  
