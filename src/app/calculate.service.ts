@@ -34,9 +34,9 @@ export class CalculateService {
           }else{
               return false;
           }
-      }else if(operator =="Subtraction"){
+      }else if(this.currentOperator =="Subtraction"){
         console.log("Subtraction in progress");
-      }else if(operator=="Multiplication"){
+      }else if(this.currentOperator=="Multiplication"){
         console.log("Multiplication in progress");  
       }else {
         console.log("Division in progress");  
