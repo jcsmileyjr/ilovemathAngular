@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import {CalculateService} from './calculate.service';
 
 import {ScoreService} from './score.service';
+import { SubtractionComponent } from './subtraction/subtraction.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {ScoreService} from './score.service';
     EquationComponent,
     FooterComponent,
     AdditionComponent,
-    HomeComponent
+    HomeComponent,
+    SubtractionComponent
   ],
   imports: [
     BrowserModule,

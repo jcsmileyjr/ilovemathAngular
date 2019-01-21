@@ -13,9 +13,10 @@ export class EquationComponent implements OnInit {
   @ViewChild("inputBox") _el:ElementRef;
     
   topLine = 0; //the random generated number on the top line of the equation
+  operator = "";
   
   userAnswer ; //the user inputed answer
-  checkAnswerResults;
+  checkAnswerResults;//used  in the onSubmitClick() to hold a boolean which is given to the score.updateScore()
 
   constructor(private calculate: CalculateService, public score:ScoreService) {
 
@@ -52,6 +53,7 @@ export class EquationComponent implements OnInit {
 
   ngOnInit() {
       this.setFocus();//auto focus the user pointer to the input box when the app starts
+      this.operator = this.calculate.getOperator(); //set the operator according to the page name
   }
 
   

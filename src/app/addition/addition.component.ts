@@ -15,7 +15,7 @@ export class AdditionComponent implements OnInit {
       
 
   ngOnInit() {
-      this.calculate.updateOperator("Addition");
+      this.calculate.updateOperatorTitle("Addition");
   }
 
 }
