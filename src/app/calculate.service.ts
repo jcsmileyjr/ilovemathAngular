@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class CalculateService {
 
+  currentOperator;//initate a varible that will hold the current page type to be use for calculations
   currentTopLine = 0; //initate equation top line variable
   current = 0; //initate temp variable used to check if the currentTopLine is the previous currentTopLine
   correctAnswer = 0;  //initate varible for correct answer to current equation  
@@ -19,9 +20,14 @@ export class CalculateService {
       return this.currentTopLine;
   }
 
+  updateOperator(page){
+      this.currentOperator = page;
+      console.log(this.currentOperator);
+  }
+
   //Used the type of operator to decide which equation to use
-  checkUserAnswer(operator, userAnwer){
-      if(operator == "Addition"){
+  checkUserAnswer(userAnwer){
+      if(this.currentOperator == "Addition"){
           this.correctAnswer = this.currentTopLine + 1;
           if(this.correctAnswer == userAnwer){
               return true;
