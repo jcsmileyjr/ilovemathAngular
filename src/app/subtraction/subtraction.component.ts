@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { CalculateService } from '../calculate.service';
+import {ScoreService} from '../score.service';
 
 @Component({
   selector: 'app-subtraction',
@@ -9,10 +10,11 @@ import { CalculateService } from '../calculate.service';
 })
 export class SubtractionComponent implements OnInit {
 
-  constructor(private calculate: CalculateService) { }
+  constructor(private calculate: CalculateService, private score: ScoreService) { }
 
   ngOnInit() {
       this.calculate.updateOperatorTitle("Subtraction");
+      this.score.resetGame();
   }
 
 }

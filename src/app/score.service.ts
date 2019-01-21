@@ -8,10 +8,10 @@ import { BehaviorSubject} from 'rxjs';
 })
 export class ScoreService {
     
-  questionsAnswer = new BehaviorSubject(1); //initate a shared variable to be displayed in the header component to show the user how many questions have been answered.
+  questionsAnswer = new BehaviorSubject(0); //initate a shared variable to be displayed in the header component to show the user how many questions have been answered.
   currentScore = new BehaviorSubject(100);  //initate a shared variable to be displayed in the header component to show the user current score
 
-  currentCorrect = 1; //initate a varible use to accumlate the number of correctly answered questions
+  currentCorrect = 0; //initate a varible use to accumlate the number of correctly answered questions
   currentCount; //initate a varible use to accumulate the number of questions answered.
   calculateScore;//used to display the current score
 
@@ -33,5 +33,12 @@ export class ScoreService {
           this.calculateScore = Math.ceil((this.currentCorrect/this.questionsAnswer.getValue())*100);
           this.currentScore.next(this.calculateScore);
       }
+  }
+
+  resetGame(){
+      this.questionsAnswer.next(0);
+      this.currentScore.next(100);
+      this.currentCorrect = 0;
+      this.currentCount = 0;
   }
 }
