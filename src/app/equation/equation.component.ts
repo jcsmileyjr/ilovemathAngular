@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { CalculateService } from '../calculate.service';
+import {ScoreService} from '../score.service';
 
 @Component({
   selector: 'app-equation',
@@ -12,7 +13,7 @@ export class EquationComponent implements OnInit {
   
   userAnswer ; //the user inputed answer
 
-  constructor(private calculate: CalculateService) {
+  constructor(private calculate: CalculateService, public score:ScoreService) {
 
     this.topLine = calculate.getRandomTopLineNumber();//when the app starts a random number is generated and shown
   }
@@ -21,9 +22,9 @@ export class EquationComponent implements OnInit {
   //update the score, update the percentage completed, and move to the next random number.
   onSubmitClick(){
     if(typeof this.userAnswer !== "undefined"){
-      console.log(this.userAnswer);
       this.calculate.checkUserAnswer("Addition", this.userAnswer);//Calculate and check the score
       this.topLine = this.calculate.getRandomTopLineNumber(); //Get the next random number
+      this.score.updateCurrentCountQuestionsAnswered();
         
     }else {
         console.log("THE USER IS CRAZY");

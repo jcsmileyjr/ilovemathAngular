@@ -11,4 +11,9 @@ export class ScoreService {
   getCurrentCountQuestionsAnswered(){
       return this.questionsAnswer;
   }
+
+  updateCurrentCountQuestionsAnswered(){
+      this.questionsAnswer += 1;
+      console.log("Score:Current question answer updated " + this.questionsAnswer);
+  }
 }
