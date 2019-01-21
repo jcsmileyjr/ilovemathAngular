@@ -9,7 +9,7 @@
   </article>
   <article class="equationUnderLine"></article>
   <article class="equationInputSection">
-    <input class="equationInput" type="text" [(ngModel)]="userAnswer">  
+    <input class="equationInput" type="text" [(ngModel)]="userAnswer" (keydown.enter)="userPressEnter($event)">  
   </article>
   <article class="equationSubmitSection">
     <button class="equationSubmitButton" (click)="onSubmitClick()">Submit</button>

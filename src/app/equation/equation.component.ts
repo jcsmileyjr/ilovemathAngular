@@ -25,13 +25,19 @@ export class EquationComponent implements OnInit {
     if(typeof this.userAnswer !== "undefined"){
       this.checkAnswerResults =this.calculate.checkUserAnswer("Addition", this.userAnswer);//Calculate the correct answer, check the user answer. If its correct a True boolean is return, if wrong a False boolean is return. The boolean is use in the Score service updateScore method. 
       this.topLine = this.calculate.getRandomTopLineNumber(); //Get the next random number
-      this.score.updateCurrentCountQuestionsAnswered();//Use to add 1 to the current number of questions answer that is displayed on the header component.
+      this.score.updateCurrentCountQuestionsAnswered();//Use to add 1 to the current number of questions answer that is displayed in the header component.
       this.score.updateScore(this.checkAnswerResults);//Use a True or False boolean to update the score
-        
+      
     }else {
         console.log("THE USER IS CRAZY");
     }  
 
+  }
+
+  //Call the onSubmitClick() when the user presses the enter button. This is called on the input element in the equation input element.
+  //tip @ https://alligator.io/angular/binding-keyup-keydown-events/
+  userPressEnter($event){
+      this.onSubmitClick();
   }
 
   ngOnInit() {
