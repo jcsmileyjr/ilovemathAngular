@@ -30,11 +30,12 @@ export class CalculateService {
       if(page=="Addition"){
           this.currentOperator = "+";
       }else if(page == "Subtraction"){
-          this.currentOperator = "-"
+          this.currentOperator = "-";
+      }else if(page == "Multiplication"){
+          this.currentOperator = "x";
       }else{
-          this.currentOperator = "x"
+          this.currentOperator = "/";
       }
-      console.log(this.currentOperatorTitle + " and " + this.currentOperator);
   }
 
   //method call on header component to update current page title
@@ -63,10 +64,20 @@ export class CalculateService {
           }else{
               return false;
           }
-      }else if(this.currentOperatorTitle=="Multiplication"){
-        console.log("Multiplication in progress");  
+      }else if(this.currentOperatorTitle =="Multiplication"){
+          this.correctAnswer = this.currentTopLine * 1;
+          if(this.correctAnswer == userAnwer){
+              return true;
+          }else{
+              return false;
+          }  
       }else {
-        console.log("Division in progress");  
+          this.correctAnswer = this.currentTopLine / 1;
+            if(this.correctAnswer == userAnwer){
+              return true;
+            }else{
+              return false;
+            }    
       } 
   }//end of checkUserAnswer method
 
