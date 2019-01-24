@@ -6,6 +6,7 @@ import { SubtractionComponent } from './subtraction/subtraction.component';
 import { MultiplicationComponent } from './multiplication/multiplication.component';
 import { DivisionComponent } from './division/division.component';
 import { HomeComponent } from './home/home.component';
+import { FinalComponent } from './final/final.component';
 
 const routes: Routes = [
     {path:'addition', component:AdditionComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
     {path:'multiplication', component:MultiplicationComponent},
     {path:'division', component:DivisionComponent},     
     {path:'home', component:HomeComponent},
+    {path:'final', component:FinalComponent},    
     {path:'',redirectTo:'/home', pathMatch:'full'}
 ];
 

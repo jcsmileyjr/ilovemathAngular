@@ -1,7 +1,11 @@
 //Tips on using BehaviorSubjects @ https://thinkster.io/tutorials/learn-rxjs-observables/using-behaviorsubject-for-values-that-change-over-time
 
+//Tips for routing @ https://alligator.io/angular/navigation-routerlink-navigate-navigatebyurl/
+
 import { Injectable } from '@angular/core';
 import { BehaviorSubject} from 'rxjs'; 
+import { Router } from '@angular/router'; //needed for routing imperatively in your components. You must also add code to the constructor. 
+
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +19,7 @@ export class ScoreService {
   currentCount; //initate a varible use to accumulate the number of questions answered.
   calculateScore;//used to display the current score
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   //called in the equation component to update the number of questions answered
   updateCurrentCountQuestionsAnswered(){
@@ -33,6 +37,15 @@ export class ScoreService {
           this.calculateScore = Math.ceil((this.currentCorrect/this.questionsAnswer.getValue())*100);
           this.currentScore.next(this.calculateScore);
       }
+      
+      this.endGame();
+  }
+
+  //Method to route the user to a Final Score review page via routing after 10 games. This is call in the Score service's updateScore method
+  endGame(){
+    if(this.currentCount >= 10){
+        this.router.navigateByUrl('/final');
+    }
   }
 
   resetGame(){
