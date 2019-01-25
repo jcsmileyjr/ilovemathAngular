@@ -31,3 +31,23 @@
     margin-top: 10px;
     margin-bottom: 10px;    
 }
+
+.flagSection{
+    display: flex;
+    flex-direction: row;
+}
+
+.flag {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flagA {    
+    color: red;
+}
+
+.flagB {    
+    color: navy;
+}

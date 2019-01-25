@@ -4,6 +4,14 @@
   <strong class="scoreCSS">{{userScore}}%</strong>
   <article class="equationSubmitSection">
     <button class="equationSubmitButton" (click)="newGame()">New Game</button>
-  </article>    
+  </article>
+  <section class="flagSection">
+    <article class="flag flagA">
+      <fa-icon [icon]="faFlagCheckered" size="6x" flip="horizontal"></fa-icon>  
+    </article>
+    <article class="flag flagB">
+      <fa-icon [icon]="faFlagCheckered" size="6x"></fa-icon>
+    </article>
+  </section>
 </section>
 <app-footer></app-footer> 
