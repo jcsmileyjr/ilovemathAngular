@@ -2,6 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';//NgModel lives here
 
+//Tips @ https://www.npmjs.com/package/@fortawesome/angular-fontawesome
+//To get Angular Font Awesome to work I had to npm individuly (instead of yarn) the three files. Use this style command: npm i @fortawesome/angular-fontawesome. 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 //Application Components
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +29,8 @@ import {CalculateService} from './calculate.service';
 import {ScoreService} from './score.service';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +48,9 @@ import {ScoreService} from './score.service';
   imports: [
     BrowserModule,
     FormsModule, //need to use ngModel
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule,
+    FontAwesomeModule
   ],
   providers: [CalculateService, ScoreService],
   bootstrap: [AppComponent]
