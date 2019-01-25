@@ -7,5 +7,17 @@
   flex-direction:row;
   justify-content: space-around;
   align-items: center;
-  font-size: 2vh;
+  font-size: 2.3vh;
+}
+
+@media only screen and (min-width:700px){
+    .biggerScreenBiggerSize {
+        font-size: 3vh;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .xsmallScreenXsmallSize {
+        font-size: 2vh;
+    }
 }

@@ -6,8 +6,6 @@ import {FormsModule} from '@angular/forms';//NgModel lives here
 //To get Angular Font Awesome to work I had to npm individuly (instead of yarn) the three files. Use this style command: npm i @fortawesome/angular-fontawesome. 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
 //Application Components
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
