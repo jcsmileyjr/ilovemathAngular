@@ -16,6 +16,7 @@ export class FinalComponent implements OnInit {
 
   faFlagCheckered = faFlagCheckered;
   faTrophy = faTrophy;
+  passFail = true;
 
   constructor(public score: ScoreService, private router: Router) { }
 
@@ -23,11 +24,21 @@ export class FinalComponent implements OnInit {
       //This method async update the score variable with the Score servie currentScore variable
       this.score.currentScore.subscribe((value) => {
           this.userScore = value;
-      });      
+      }); 
+      
+      this.showPassFailFlags();
   }
 
   newGame(){
       this.router.navigateByUrl('/home');
+  }
+
+  showPassFailFlags(){
+      if(this.userScore > 70 ){
+          this.passFail = true;
+      }else{
+          this.passFail = false;
+      }
   }
 
 }

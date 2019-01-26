@@ -44,10 +44,6 @@
     align-items: center;
 }
 
-.redFlag {    
-    color: red;
-}
-
 .blueFlag {    
     color: navy;
 }
@@ -55,3 +51,9 @@
 .trophyImage {
     color: gold;
 }
+
+.redFlag {    
+    color: red;
+    width: 100vw;
+}
+
