@@ -36,7 +36,7 @@ export class FinalComponent implements OnInit {
   }
 
   showPassFailFlags(){
-      if(this.userScore > 70 ){
+      if(this.userScore >= 70 ){
           this.passFail = true;
       }else{
           this.passFail = false;

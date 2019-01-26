@@ -35,6 +35,7 @@
 .flagSection{
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
 }
 
 .flag {
@@ -46,6 +47,14 @@
 
 .blueFlag {    
     color: navy;
+    animation-name: winner;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes winner {
+    from {color: navy;}
+    to {color: red;}
 }
 
 .trophyImage {
