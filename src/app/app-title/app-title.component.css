@@ -1,0 +1,19 @@
+.appTitle {
+  //flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: navy;
+  color: white;
+  font-size: 7vh;    
+}
+
+.appTitle > div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.appCenterTitle {
+  color: red;
+}

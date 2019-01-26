@@ -1,0 +1,27 @@
+<section class="main"> 
+  <p>Congrats on solving 10 Problems</p>
+  <p>Your final score is</p>
+  <strong class="scoreCSS">{{userScore}}%</strong>
+  <article class="equationSubmitSection">
+    <button class="equationSubmitButton" (click)="newGame()">New Game</button>
+  </article>
+  <section >
+    <div class="flagSection" *ngIf="passFail">  
+      <article class="flag blueFlag">
+        <fa-icon [icon]="faFlagCheckered" size="6x" flip="horizontal"></fa-icon>  
+      </article>
+      <article class="flag trophyImage">
+        <fa-icon [icon]="faTrophy" size="6x"></fa-icon>  
+      </article>      
+      <article class="flag blueFlag">
+        <fa-icon [icon]="faFlagCheckered" size="6x"></fa-icon>
+      </article>
+    </div>
+    <div class="failingScore" *ngIf="!passFail">      
+      <article class="flag redFlag">
+        <fa-icon [icon]="faFlagCheckered" size="6x"></fa-icon>
+      </article>       
+    </div>    
+  </section>    
+</section>
+<app-footer></app-footer> 

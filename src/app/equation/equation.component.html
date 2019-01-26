@@ -1,0 +1,17 @@
+<section class="equationSection">
+  <article class="equationMiddleLine">
+    <div class="equationLine"></div>
+    <div class="equationLine">{{topLine}}</div>    
+  </article>
+  <article class="equationMiddleLine">
+    <div class="equationOperatorLine">{{operator}}</div>
+    <div class="equationLine">1</div>    
+  </article>
+  <article class="equationUnderLine"></article>
+  <article class="equationInputSection">
+    <input class="equationInput" type="number" [(ngModel)]="userAnswer" (keydown.enter)="userPressEnter($event)" #inputBox>  
+  </article>
+  <article class="equationSubmitSection">
+    <button class="equationSubmitButton" (click)="onSubmitClick()">Submit</button>
+  </article>
+</section>

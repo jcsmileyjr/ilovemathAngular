@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.runnerIcon {
+    flex: 9;
+}
+
+.runner1 {
+    transform: translate(5vw);
+}
+
+.runner2 {
+    transform: translate(20vw);
+}
+
+.runner3 {
+    transform: translate(35vw);
+}
+
+.runner4 {
+    transform: translate(55vw);
+}
+
+.runner5 {
+    transform: translate(70vw);
+}
+
+.goaline {
+    flex: 1;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.goal {
+    flex: 1;
+}
+
+@media only screen and (max-width:700px){
+  .runner1 {
+    transform: translate(5vw);
+  }
+
+  .runner2 {
+    transform: translate(10vw);
+  }
+
+  .runner3 {
+    transform: translate(25vw);
+  }
+
+  .runner4 {
+    transform: translate(35vw);
+  }
+
+  .runner5 {
+    transform: translate(40vw);
+  }
+}

@@ -1,0 +1,20 @@
+<main class="container">
+  <section class="runnerIcon runner1" *ngIf="showRunner1">
+    <fa-icon [icon]="faRunning" size="1x" class="runner1"></fa-icon>  
+  </section>
+  <section class="runnerIcon runner2" *ngIf="showRunner2">
+    <fa-icon [icon]="faRunning" size="2x" class="runner"></fa-icon>  
+  </section>
+  <section class="runnerIcon runner3" *ngIf="showRunner3">
+    <fa-icon [icon]="faRunning" size="3x" class="runner"></fa-icon>  
+  </section>
+  <section class="runnerIcon runner4" *ngIf="showRunner4">
+    <fa-icon [icon]="faRunning" size="4x" class="runner"></fa-icon>  
+  </section>
+  <section class="runnerIcon runner5" *ngIf="showRunner5">
+    <fa-icon [icon]="faRunning" size="5x" class="runner"></fa-icon>  
+  </section>    
+  <section class="goalline" *ngIf="!readyPlayer">
+    <fa-icon [icon]="faFlagCheckered" size="6x" class="goal" *ngIf="!readyPlayer"></fa-icon>
+  </section>   
+</main>
