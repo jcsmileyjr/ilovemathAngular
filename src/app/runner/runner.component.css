@@ -5,22 +5,44 @@
 }
 
 .runnerIcon {
-    flex: 2;
+    flex: 9;
 }
 
-.runner {
+.runner1 {
+    transform: translate(25px);
+}
+
+.runner2 {
+    transform: translate(75px);
+}
+
+.runner3 {
+    transform: translate(125px);
+}
+
+.runner4 {
+    transform: translate(175px);
+}
+
+.runner5 {
+    transform: translate(230px);
 }
 
 .goaline {
     flex: 1;
+    display:flex;
+    justify-content:center;
+    align-items: center;
 }
 
-@keyframes running {
-    0% {
-        transform: translate(0,0);
-    }
-    
-    100%{
-        transform: translate(100px,100px);
-    }
+.goal {
+    flex: 1;
+}
+
+.startLine {
+    color:green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vh;
 }

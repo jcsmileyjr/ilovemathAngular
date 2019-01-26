@@ -1,20 +1,23 @@
 <main class="container">
-  <section class="runnerIcon" *ngIf="showRunner1">
-    <fa-icon [icon]="faRunning" size="1x" class="runner"></fa-icon>  
+  <section class="runnerIcon runner1" *ngIf="showRunner1">
+    <fa-icon [icon]="faRunning" size="1x" class="runner1"></fa-icon>  
   </section>
-  <section class="runnerIcon" *ngIf="showRunner2">
+  <section class="runnerIcon runner2" *ngIf="showRunner2">
     <fa-icon [icon]="faRunning" size="2x" class="runner"></fa-icon>  
   </section>
-  <section class="runnerIcon" *ngIf="showRunner3">
+  <section class="runnerIcon runner3" *ngIf="showRunner3">
     <fa-icon [icon]="faRunning" size="3x" class="runner"></fa-icon>  
   </section>
-  <section class="runnerIcon" *ngIf="showRunner4">
+  <section class="runnerIcon runner4" *ngIf="showRunner4">
     <fa-icon [icon]="faRunning" size="4x" class="runner"></fa-icon>  
   </section>
-  <section class="runnerIcon" *ngIf="showRunner5">
+  <section class="runnerIcon runner5" *ngIf="showRunner5">
     <fa-icon [icon]="faRunning" size="5x" class="runner"></fa-icon>  
   </section>    
   <section class="goalline">
-    <fa-icon [icon]="faFlagCheckered" size="6x" ></fa-icon>
+    <fa-icon [icon]="faFlagCheckered" size="6x" class="goal" *ngIf="!readyPlayer"></fa-icon>
+  </section>
+  <section class="startLine" *ngIf="readyPlayer">
+    <fa-icon [icon]="faFlagCheckered" size="6x" class="goal" class="startFlag"></fa-icon>
   </section>    
 </main>

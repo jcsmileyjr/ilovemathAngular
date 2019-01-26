@@ -24,6 +24,7 @@ export class RunnerComponent implements OnInit {
   showRunner3 = false;
   showRunner4 = false;
   showRunner5 = false;
+  readyPlayer = true;
 
   constructor(public score: ScoreService) {}
 
@@ -40,6 +41,7 @@ export class RunnerComponent implements OnInit {
   checkRunnerStatus(){
       if(this.score.questionsAnswer.getValue() == 1){
           this.showRunner1 = true;
+          this.readyPlayer = false;
       }else if(this.score.questionsAnswer.getValue() == 3){
           this.showRunner1 = false;
           this.showRunner2 = true;
