@@ -14,7 +14,7 @@
   <section class="runnerIcon runner5" *ngIf="showRunner5">
     <fa-icon [icon]="faRunning" size="5x" class="runner"></fa-icon>  
   </section>    
-  <section class="goalline">
+  <section class="goalline" *ngIf="!readyPlayer">
     <fa-icon [icon]="faFlagCheckered" size="6x" class="goal" *ngIf="!readyPlayer"></fa-icon>
   </section>
   <section class="startLine" *ngIf="readyPlayer">

@@ -9,23 +9,23 @@
 }
 
 .runner1 {
-    transform: translate(25px);
+    transform: translate(5vw);
 }
 
 .runner2 {
-    transform: translate(75px);
+    transform: translate(20vw);
 }
 
 .runner3 {
-    transform: translate(125px);
+    transform: translate(35vw);
 }
 
 .runner4 {
-    transform: translate(175px);
+    transform: translate(55vw);
 }
 
 .runner5 {
-    transform: translate(230px);
+    transform: translate(70vw);
 }
 
 .goaline {
@@ -42,7 +42,8 @@
 .startLine {
     color:green;
     display: flex;
-    justify-content: center;
+    justify-content:flex-end;
     align-items: center;
     width:100vh;
+    background-color: antiquewhite;
 }
