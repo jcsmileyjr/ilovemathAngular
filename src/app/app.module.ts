@@ -21,10 +21,12 @@ import { SubtractionComponent } from './subtraction/subtraction.component';
 import { MultiplicationComponent } from './multiplication/multiplication.component';
 import { DivisionComponent } from './division/division.component';
 import { FinalComponent } from './final/final.component';
+import { RunnerComponent } from './runner/runner.component';
 
 //Services
 import {CalculateService} from './calculate.service';
 import {ScoreService} from './score.service';
+
 
 
 
@@ -41,7 +43,8 @@ import {ScoreService} from './score.service';
     SubtractionComponent,
     MultiplicationComponent,
     DivisionComponent,
-    FinalComponent
+    FinalComponent,
+    RunnerComponent
   ],
   imports: [
     BrowserModule,

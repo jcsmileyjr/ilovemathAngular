@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.runnerIcon {
+    flex: 2;
+}
+
+.runner {
+}
+
+.goaline {
+    flex: 1;
+}
+
+@keyframes running {
+    0% {
+        transform: translate(0,0);
+    }
+    
+    100%{
+        transform: translate(100px,100px);
+    }
+}
