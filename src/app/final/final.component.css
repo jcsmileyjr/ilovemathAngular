@@ -38,16 +38,20 @@
 }
 
 .flag {
-    width: 50vw;
+    width: 30vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.flagA {    
+.redFlag {    
     color: red;
 }
 
-.flagB {    
+.blueFlag {    
     color: navy;
+}
+
+.trophyImage {
+    color: gold;
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Observable} from 'rxjs';
 import { Router } from '@angular/router'; //needed for routing imperatively in your components. You must also add code to the constructor. 
-import { faFlagCheckered } from '@fortawesome/free-solid-svg-icons';
+import { faFlagCheckered, faTrophy } from '@fortawesome/free-solid-svg-icons';
 
 import {ScoreService} from '../score.service';
 
@@ -15,6 +15,7 @@ export class FinalComponent implements OnInit {
   userScore = 0; // it shows the current score.  
 
   faFlagCheckered = faFlagCheckered;
+  faTrophy = faTrophy;
 
   constructor(public score: ScoreService, private router: Router) { }
 
