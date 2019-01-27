@@ -44,7 +44,4 @@ export class FinalComponent implements OnInit {
   }
 
 }
-
-//The idea is for a icon runner to run across the screen to a black and white checkered flag (far right side of screen).
-//It would be great for a animated dust cloud to be behind the player or something to show movement.
 //On the home page allow the playter to type in his name and favorite color. The runner icon can be that color and the player name used throughout app.
