@@ -1,27 +1,40 @@
-# IlovemathAngular
+# I Love Math (Angular Version)
+<hr>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
+![Screen-shot of app in use](assets/active-case-a-compressor.png) 
 
-## Development server
+### Table of Contents
+1. Project Demo Link
+2. Purpose
+3. Motivation
+4. Objectives
+5. Technologies Used
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Deployed Production Link: [I Love Math](https://jcsmileyjr.github.io/ilovemathAngular/)
 
-## Code scaffolding
+### Purpose:
+A simple math testing app for an kids.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Motivation:
+My daughter was concern about her 10 year old half brother grades in math class. She and I discuss making an app personalize for him to help him practice math. While she and I didn't work together on the project, I was inspired to make the app for her brother.
 
-## Build
+### Objectives:
+* Learn how to build apps with Angular 6
+* The user should be able to do simple addition, subtraction, multiplication, and division math problems 
+* Make it personalize for a boy
+* Bonus: Use local storage to save the user name and other data to personalize it more
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### This app was built with the following technologies:
+**Angular:** JavaScript front-end library for building web applications.
+ 
+**Git-Hub:** web-based version control repository and Internet hosting service
+ 
+**Flex-box:** CSS framework for layouts
+  
+**JavaScript:** object-oriented programming language for web pages
+ 
+**HTML:** Mark-up language for creating web pages and local storage of data in the browser
+ 
+**CSS:** A formatting language for styling web pages
+ 
+*Create by JC Smiley in January 2019*
