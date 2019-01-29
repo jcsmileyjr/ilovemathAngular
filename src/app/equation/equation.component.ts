@@ -13,7 +13,7 @@ export class EquationComponent implements OnInit {
   @ViewChild("inputBox") _el:ElementRef;
     
   topLine = 0; //the random generated number on the top line of the equation
-  bottomLine = 0; //the random generated number on the bottom line of the equation
+  bottomLine = 1; //the random generated number on the bottom line of the equation
   operator = "";
   
   userAnswer ; //the user inputed answer
@@ -57,6 +57,11 @@ export class EquationComponent implements OnInit {
   ngOnInit() {
       this.setFocus();//auto focus the user pointer to the input box when the app starts
       this.operator = this.calculate.getOperator(); //set the operator according to the page name
+      
+      //This "if statement" is use to make sure the division page always divide by one
+      if(this.operator == "/"){
+          this.bottomLine = 1;
+      }
   }
 
   

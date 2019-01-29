@@ -24,9 +24,11 @@ export class CalculateService {
       return this.currentTopLine;
   }
 
-  //called in the Equation component when the user press the submit button or press the enter key. This also check to make sure the same number isn't chosen twice in a row
+  //called in the Equation component when the user press the submit button or press the enter key. This also check to make sure the same number isn't chosen twice in a row.
   getRandomBottomLineNumber(){
-      if(this.currentOperatorTitle == "Division"){
+      //This "if statement" is use to make sure the division page always divide by one
+      if(this.currentOperator == "/" || this.currentOperatorTitle=="Division"){
+          this.currentBottomLine = 1
           return this.currentBottomLine;
       }else {
         this.current = this.currentBottomLine;
@@ -41,8 +43,7 @@ export class CalculateService {
 
   //method called inside each page onInit to update the page title on the header component
   updateOperatorTitle(page){
-      this.currentOperatorTitle = page;
-      
+      this.currentOperatorTitle = page;      
       if(page=="Addition"){
           this.currentOperator = "+";
       }else if(page == "Subtraction"){
