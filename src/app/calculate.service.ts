@@ -13,15 +13,36 @@ export class CalculateService {
   correctAnswer = 0;  //initate varible for correct answer to current equation  
 
   constructor() { }
-    
-  //called in the Equation component when the user press the submit button or press the enter key. This also check to make sure the same number isn't chosen twice in a row
-  getRandomTopLineNumber(){
+
+  //get a random number that is not the previous number
+  checkIfTopNumberIsPreviousNumber(){
       this.current = this.currentTopLine;
       this.currentTopLine = Math.floor(Math.random()*11);
       if(this.current == this.currentTopLine){
           this.currentTopLine = Math.floor(Math.random()*11);
-      }
+      }      
+  }
+    
+  //called in the Equation component when the user press the submit button or press the enter key. This also check to make sure the same number isn't chosen twice in a row
+  getRandomTopLineNumber(){
+      this.checkIfTopNumberIsPreviousNumber();
       return this.currentTopLine;
+  }
+
+  //get a random number that is not the previous number
+  checkIfBottomNumberIsPreviousNumber(){
+        this.current = this.currentBottomLine;
+        this.currentBottomLine = Math.floor(Math.random()*6);
+        if(this.current == this.currentBottomLine){
+          this.currentBottomLine = Math.floor(Math.random()*6);
+        }        
+  }
+
+  //Check if the top number is higher then the bottom number. If it is, then a new random bottom number is drawn until its lower then the top number. 
+  checkIfTopNumberIsHigherThenBottomNumber(){      
+      while(this.currentTopLine < this.currentBottomLine){                   
+          this.checkIfBottomNumberIsPreviousNumber();        
+      }
   }
 
   //called in the Equation component when the user press the submit button or press the enter key. This also check to make sure the same number isn't chosen twice in a row.
@@ -31,12 +52,10 @@ export class CalculateService {
           this.currentBottomLine = 1
           return this.currentBottomLine;
       }else {
-        this.current = this.currentBottomLine;
-        this.currentBottomLine = Math.floor(Math.random()*6);
-        if(this.current == this.currentBottomLine){
-          this.currentBottomLine = Math.floor(Math.random()*6);
-        }
-        return this.currentBottomLine;          
+          this.checkIfBottomNumberIsPreviousNumber();//get a random number that is not the previous number
+          
+          this.checkIfTopNumberIsHigherThenBottomNumber();//check to make sure there is no negative number answers      
+          return this.currentBottomLine;          
       }
 
   }
