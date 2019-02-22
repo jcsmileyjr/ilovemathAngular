@@ -1,27 +1,40 @@
-# IlovemathAngular
+# I Love Math (Angular Version)
+<hr>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
+![Screen-shot of app](./src/assets/ilovemathAngular-3-compressor.png)
 
-## Development server
+### Table of Contents
+1. Project Demo Link 
+2. Purpose
+3. Motivation
+4. Objectives
+5. Technologies Used
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Project Demo Link: [I Love Math](https://jcsmileyjr.github.io/ilovemathAngular/home)
 
-## Code scaffolding
+### Purpose:
+A math practice app for a boy.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Motivation:
+I was inspired by my daughter who wanted to help her little brother learn math with a app. She described how she wanted it to look and the functionality. 
 
-## Build
+### Objectives:
+* The user is given the choice of practicing addition, subtraction, division, and multiplication.
+* The user will be given 10 problems with the numbers being 1-10. 
+* The user is constantly reminded of the number of questions remaining and the score.
+* A non-distracting boy theme animation to make it fun
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### This app was built with the following technologies:
+**Angular:** JavaScript web development framework 
+ 
+**Git-Hub:** Web-based version control repository and Internet hosting service
+ 
+**Flexbox:** A CSS based layout technology for building responsive websites
+  
+**JavaScript:** Object-oriented programming language for web pages
+ 
+**HTML:** Mark-up language for creating web pages 
+ 
+**CSS:** A formatting language for styling web pages
+ 
+*Create by JC Smiley in January of 2019*
