@@ -13,13 +13,13 @@
 ### Project Demo Link: [I Love Math](https://jcsmileyjr.github.io/ilovemathAngular/home)
 
 ### Purpose:
-A math practice app for a boy.
+A math practice app for a child
 
 ### Motivation:
 I was inspired by my daughter who wanted to help her little brother learn math with a app. She described how she wanted it to look and the functionality. 
 
 ### Objectives:
-* The user is given the choice of practicing addition, subtraction, division, and multiplication.
+* The user is given the choice of practicing addition, subtraction, division, or multiplication.
 * The user will be given 10 problems with the numbers being 1-10. 
 * The user is constantly reminded of the number of questions remaining and the score.
 * A non-distracting boy theme animation to make it fun
